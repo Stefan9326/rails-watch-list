@@ -35,7 +35,7 @@ gem "font-awesome-sass", "~> 6.1"
 
 gem "simple_form"
 
-gem "dotenv-rails", groups: [:development, :test]
+gem "dotenv-rails"
 
 gem "cloudinary"
 
