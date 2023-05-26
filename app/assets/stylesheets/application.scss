@@ -10,3 +10,83 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import "components/navbar";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 50px;
+
+  p {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: -4px;
+  }
+
+  div {
+    display: flex;
+    gap: 20px;
+
+    a {
+      text-decoration: none;
+      font-size: 1.2em;
+      color: black;
+    }
+  }
+}
+
+.hero {
+  background-image: asset-url('bright-yellow-fire-blazing-against-night-sky-generated-by-ai');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  button {
+    width: 200px;
+    background-color: #f5f5f5;
+    border-radius: 22px;
+    padding: 14px 24px;
+    border: none;
+    font-size: 1.2em;
+    color: #000;
+    cursor: pointer;
+    box-sizing: content-box;
+  }
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap:50px;
+
+  .list-card {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(246, 126, 46), rgb(238, 112, 38));
+    border-radius: 10px;
+    font-size: 1.5em;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  a {
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+  }
+}

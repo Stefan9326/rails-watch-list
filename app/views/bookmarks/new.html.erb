@@ -1,0 +1,7 @@
+
+<h1>Add a movie to your list</h1>
+ <%= simple_form_for [@list, @bookmark] do |f| %>
+<%= f.input :movie_id, collection: @movies, label: "Movie" %>
+<%= f.input :comment, label: "Comment" %>
+<%= f.submit "Add" %>
+<% end %>

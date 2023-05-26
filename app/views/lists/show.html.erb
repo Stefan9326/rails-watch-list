@@ -1,0 +1,17 @@
+<div>
+  <%= @list.movies.count %>
+  <h1><%= @list.name %></h1>
+</div>
+<%= link_to "Add a movie", new_list_bookmark_path(@list) %>
+<div class="card-container">
+  <% @list.bookmarks.each do |bookmark| %>
+    <div class="movie-card">
+      <%= image_tag "https://image.tmdb.org/t/p/w500/#{bookmark.movie.poster_url}", width: "200px", height: "300px" %>
+      <h5><%= bookmark.movie.title %></h5>
+      <p><%= bookmark.movie.overview %></p>
+      <p>Comment:</p>
+      <p><%= bookmark.comment %></p>
+      <%= button_to "Delete", bookmark_path(bookmark), method: :delete %>
+    </div>
+  <% end %>
+</div>

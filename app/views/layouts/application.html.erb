@@ -11,6 +11,13 @@
   </head>
 
   <body>
+    <header class="navbar-lewagon navbar-collapse">
+      <p>WatchList</p>
+      <div>
+        <%= link_to "My lists", lists_path %>
+        <%= link_to "New list", new_list_path %>
+      </div>
+    </header>
     <%= yield %>
   </body>
 </html>

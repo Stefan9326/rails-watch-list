@@ -1,0 +1,12 @@
+<div class="hero">
+  <h1>Organize your movies into lists</h1>
+  <%= button_to "Create a movie list", new_list_path, method: "get" %>
+</div>
+<h2>My lists</h2>
+<div class="card-container">
+  <% @lists.each do |list| %>
+    <div class="list-card">
+      <%= link_to list.name, list_path(list) %>
+    </div>
+  <% end %>
+</div>
